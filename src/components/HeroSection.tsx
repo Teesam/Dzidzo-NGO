@@ -30,7 +30,7 @@ const HeroSection = () => {
           {/* Headline */}
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             Every Child Deserves a{" "}
-            <span className="text-primary">Bright Future</span>
+            <span className="text-primary">Good Education</span>
           </h1>
 
           {/* Subheadline */}

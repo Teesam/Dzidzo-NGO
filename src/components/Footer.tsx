@@ -39,16 +39,16 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
                 <Heart className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="font-display text-xl font-semibold">BrightFutures</span>
+              <span className="font-display text-xl font-semibold">Dzidzo Foundation</span>
             </a>
             <p className="font-body text-secondary-foreground/80 leading-relaxed mb-6 max-w-sm">
               Empowering African children through education. Together, we're building 
-              brighter futures, one child at a time.
+              Dzidzo foundation, one child at a time.
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="font-body text-sm">contact@brightfutures.org</span>
+                <span className="font-body text-sm">dzidzofoundation@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary" />
@@ -116,7 +116,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-secondary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="font-body text-sm text-secondary-foreground/60">
-            © 2024 BrightFutures. All rights reserved. | 501(c)(3) Nonprofit Organization
+            © 2024 Dzidzo Foundation. All rights reserved. | 501(c)(3) Nonprofit Organization
           </p>
 
           {/* Socials */}

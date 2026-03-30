@@ -59,7 +59,7 @@ const MissionSection = () => {
               Empowering Africa's Next Generation
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8">
-              At BrightFutures, we believe that education is the most powerful tool for 
+              At Dzidzo Foundation, we believe that education is the most powerful tool for 
               breaking the cycle of poverty. Our mission is to ensure that every child in 
               Africa has access to quality education, regardless of their circumstances.
             </p>
