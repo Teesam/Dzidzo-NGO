@@ -15,7 +15,7 @@ const Footer = () => {
       { name: "Digital Learning", href: "#" },
     ],
     getInvolved: [
-      { name: "Donate", href: "#" },
+      { name: "Donate", href: "https://www.paypal.com/donate/?hosted_button_id=HFKDSE5JMR28U" },
       { name: "Sponsor a Child", href: "#" },
       { name: "Volunteer", href: "#" },
       { name: "Partner With Us", href: "#" },
@@ -23,9 +23,9 @@ const Footer = () => {
   };
 
   const socials = [
-    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Facebook, href: "https://www.facebook.com/p/Dzidzo-Foundation-100067639960215/", label: "Facebook" },
     { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Instagram, href: "https://www.instagram.com/dzidzofoundation/", label: "Instagram" },
     { icon: Linkedin, href: "#", label: "LinkedIn" },
   ];
 
@@ -52,12 +52,16 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary" />
-                <span className="font-body text-sm">+1 (555) 123-4567</span>
+                <span className="font-body text-sm">+44783732903</span>
               </div>
               <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5 text-primary" />
-                <span className="font-body text-sm">123 Hope Street, New York, NY</span>
+                <Phone className="w-5 h-5 text-primary" />
+                <span className="font-body text-sm">Registered Charity Number: 1184744</span>
               </div>
+              {/* <div className="flex items-center gap-3">
+                <MapPin className="w-5 h-5 text-primary" />
+                <span className="font-body text-sm"> Ipswich, United Kingdom</span>
+              </div> */}
             </div>
           </div>
 
@@ -116,7 +120,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-secondary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="font-body text-sm text-secondary-foreground/60">
-            © 2024 Dzidzo Foundation. All rights reserved. | 501(c)(3) Nonprofit Organization
+            © 2026 Dzidzo Foundation. All rights reserved. | 501(c)(3) Nonprofit Organization
           </p>
 
           {/* Socials */}

@@ -40,9 +40,9 @@ const MissionSection = () => {
             </div>
             {/* Floating Card */}
             <div className="absolute -bottom-6 -right-6 lg:-right-10 bg-card rounded-xl p-6 shadow-card max-w-[280px]">
-              <p className="font-display text-2xl font-bold text-primary mb-1">15+ Years</p>
+              <p className="font-display text-2xl font-bold text-primary mb-1">5+ Years</p>
               <p className="font-body text-sm text-muted-foreground">
-                of dedicated service to African children's education
+                of dedicated service to children's education
               </p>
             </div>
             {/* Decorative Elements */}
@@ -56,17 +56,13 @@ const MissionSection = () => {
               Our Mission
             </span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
-              Empowering Africa's Next Generation
+              Educating and enriching young lives.
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8">
-              At Dzidzo Foundation, we believe that education is the most powerful tool for 
-              breaking the cycle of poverty. Our mission is to ensure that every child in 
-              Africa has access to quality education, regardless of their circumstances.
+              
             </p>
             <p className="font-body text-lg text-muted-foreground leading-relaxed mb-10">
-              Through building schools, training teachers, and providing essential 
-              resources, we're creating pathways to success for thousands of children 
-              who would otherwise be left behind.
+              
             </p>
 
             {/* Values Grid */}

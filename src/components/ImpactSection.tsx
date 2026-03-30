@@ -41,7 +41,7 @@ const ImpactSection = () => {
           </h2>
           <p className="font-body text-lg text-secondary-foreground/80 leading-relaxed">
             Every donation, every volunteer hour, every partnership brings us closer to a 
-            world where every African child has the education they deserve.
+            world where every child has the education they deserve.
           </p>
         </div>
 

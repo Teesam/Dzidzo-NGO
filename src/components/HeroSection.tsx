@@ -35,7 +35,7 @@ const HeroSection = () => {
 
           {/* Subheadline */}
           <p className="font-body text-lg md:text-xl text-primary-foreground/80 leading-relaxed mb-8 max-w-2xl animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            We're on a mission to provide quality education to children across Africa. 
+            We're on a mission to provide quality education to children across the world. 
             Together, we can break the cycle of poverty and unlock unlimited potential.
           </p>
 
