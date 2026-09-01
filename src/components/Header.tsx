@@ -1,15 +1,17 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "About Us", href: "#about" },
-    { name: "Our Impact", href: "#impact" },
-    { name: "Programs", href: "#programs" },
-    { name: "Get Involved", href: "#get-involved" },
+    { name: "Home", href: "/" },
+    { name: "Who We Are", href: "/who-we-are" },
+    { name: "Our Impact", href: "/#impact" },
+    { name: "Programs", href: "/#programs" },
+    { name: "Events", href: "/#events" },
+    { name: "Get Involved", href: "/#get-involved" },
   ];
 
   return (
@@ -17,13 +19,12 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <Heart className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="font-display text-xl font-semibold text-foreground">
-             DZIDZO
-            </span>
+          <a href="/" className="flex items-center">
+            <img
+              src={logo}
+              alt="Dzidzo Foundation"
+              className="h-[30rem] lg:h-14"
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -41,9 +42,9 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button variant="default" size="lg">
+            <a href="https://www.paypal.com/donate/?hosted_button_id=HFKDSE5JMR28U" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors duration-200">
               Donate Now
-            </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -70,9 +71,9 @@ const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <Button variant="default" size="lg" className="mt-2">
+              <a href="https://www.paypal.com/donate/?hosted_button_id=HFKDSE5JMR28U" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors duration-200">
                 Donate Now
-              </Button>
+              </a>
             </nav>
           </div>
         )}

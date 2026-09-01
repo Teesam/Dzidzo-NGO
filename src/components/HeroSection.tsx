@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import heroImage from "@/assets/hero-children.jpg";
+import { NavLink } from "./NavLink";
 
 const HeroSection = () => {
   return (
@@ -20,12 +21,12 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 lg:px-8 py-20 lg:py-32">
         <div className="max-w-3xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full px-4 py-2 mb-6 animate-fade-up">
+          {/* <div className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full px-4 py-2 mb-6 animate-fade-up">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse-soft" />
             <span className="font-body text-sm font-medium text-primary-foreground/90">
-              Transforming Lives Through Education
+              Educating and enriching young lives
             </span>
-          </div>
+          </div> */}
 
           {/* Headline */}
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
@@ -34,25 +35,23 @@ const HeroSection = () => {
           </h1>
 
           {/* Subheadline */}
-          <p className="font-body text-lg md:text-xl text-primary-foreground/80 leading-relaxed mb-8 max-w-2xl animate-fade-up" style={{ animationDelay: "0.2s" }}>
+          {/* <p className="font-body text-lg md:text-xl text-primary-foreground/80 leading-relaxed mb-8 max-w-2xl animate-fade-up" style={{ animationDelay: "0.2s" }}>
             We're on a mission to provide quality education to children across the world. 
             Together, we can break the cycle of poverty and unlock unlimited potential.
-          </p>
+          </p> */}
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-            <Button variant="hero" size="xl">
-              Start Giving Today
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="hero-outline" size="xl">
-              <Play className="w-5 h-5" />
-              Watch Our Story
-            </Button>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=HFKDSE5JMR28U" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-4 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors duration-200">
+                Start Giving Today
+              </a>
+            <NavLink to="/who-we-are" className="inline-flex items-center gap-2 px-6 py-4 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors duration-200">
+              Read Our Story
+            </NavLink>
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-12 pt-8 border-t border-primary-foreground/20 animate-fade-up" style={{ animationDelay: "0.4s" }}>
+          {/* <div className="mt-12 pt-8 border-t border-primary-foreground/20 animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <div className="flex flex-wrap gap-8 lg:gap-12">
               <div>
                 <p className="font-display text-3xl lg:text-4xl font-bold text-primary">50,000+</p>
@@ -67,7 +66,7 @@ const HeroSection = () => {
                 <p className="font-body text-sm text-primary-foreground/70">Countries Reached</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

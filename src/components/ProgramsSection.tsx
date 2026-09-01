@@ -5,32 +5,52 @@ import teacherStudents from "@/assets/teacher-students.jpg";
 const programs = [
   {
     icon: Home,
-    title: "School Construction",
+    title: "Donjani Library Project",
     description:
-      "We build safe, modern learning facilities in underserved communities, providing children with proper classrooms and resources.",
+      `Libraries are fundamental and serve as cornerstones of healthy communities.
+       We regularly collect and send donated
+        books and educational resources to improve the quality of
+        education for those we support. This initiative helps
+        individuals and local communities access, read, and
+        understand books.
+        By providing books and educational resources, we enable
+        students to acquire knowledge and achieve their full
+        potential. We fulfil our mission with the generous support of
+        donors, volunteers, sponsors, and partners. You can support
+        us today by donating books or contributing towards the
+        next shipment!`,
     color: "bg-primary/10 text-primary",
   },
   {
     icon: BookOpen,
-    title: "Teacher Training",
+    title: "The Calla Lily Project",
     description:
-      "Our comprehensive training programs empower local educators with modern teaching methodologies and resources.",
+      `The Calla Lily Project works to tackle period poverty in Zimbabwe, 
+      helping girls access education without menstruation becoming a barrier.
+      Through local donations, reusable menstrual products sewn by women in the community, 
+      and educational sessions delivered by local healthcare professionals, 
+      we support girls with the products, knowledge and confidence to manage their periods safely and with dignity.`,
     color: "bg-accent/10 text-accent",
   },
   {
-    icon: Apple,
-    title: "Nutrition Programs",
+    icon: Laptop,
+    title: "Beyond the Classroom",
     description:
-      "Healthy children learn better. We provide nutritious meals to ensure students can focus on their education.",
+      `Dzi Dzo Foundation supports young people across Suffolk through local projects focused on wellbeing, 
+      self-esteem and positive mindset. Our Wellbeing Walks run regularly, providing young people with an 
+      opportunity to connect, talk, reflect and support their mental and emotional wellbeing in a welcoming environment.
+      Through our programmes, we aim to help young people build confidence, resilience and a positive outlook.`,
     color: "bg-terracotta/10 text-terracotta",
   },
-  {
-    icon: Laptop,
-    title: "Digital Learning",
-    description:
-      "Bridging the digital divide by introducing technology and computer literacy to rural schools.",
-    color: "bg-secondary/10 text-secondary",
-  },
+
+  
+  // {
+  //   icon: Laptop,
+  //   title: "Digital Learning",
+  //   description:
+  //     "Bridging the digital divide by introducing technology and computer literacy to rural schools.",
+  //   color: "bg-secondary/10 text-secondary",
+  // },
 ];
 
 const ProgramsSection = () => {
@@ -94,9 +114,9 @@ const ProgramsSection = () => {
               <p className="font-body text-sm text-muted-foreground mb-4">
                 Your support helps us expand our programs to reach more children.
               </p>
-              <Button variant="default" size="default">
+              {/* <Button variant="default" size="default">
                 Learn More About Our Work
-              </Button>
+              </Button> */}
             </div>
             {/* Decorative */}
             <div className="absolute -top-6 -right-6 w-48 h-48 bg-primary/10 rounded-full blur-3xl -z-10" />

@@ -1,32 +1,32 @@
-import { Heart, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Mail, Phone, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const links = {
     about: [
-      { name: "Our Story", href: "#" },
-      { name: "Our Team", href: "#" },
-      { name: "Annual Reports", href: "#" },
-      { name: "Careers", href: "#" },
+      { name: "Who We Are", href: "/who-we-are" },
+      // { name: "Our Team", href: "#" },
+      // { name: "Annual Reports", href: "#" },
+      // { name: "Careers", href: "#" },
     ],
     programs: [
-      { name: "School Construction", href: "#" },
-      { name: "Teacher Training", href: "#" },
-      { name: "Nutrition Programs", href: "#" },
-      { name: "Digital Learning", href: "#" },
+      { name: "Donjani Library Project", href: "" },
+      { name: "The Calla Lily Project", href: "" },
+      { name: "Beyond the Classroom", href: "" },
     ],
     getInvolved: [
       { name: "Donate", href: "https://www.paypal.com/donate/?hosted_button_id=HFKDSE5JMR28U" },
-      { name: "Sponsor a Child", href: "#" },
-      { name: "Volunteer", href: "#" },
-      { name: "Partner With Us", href: "#" },
+      // { name: "Sponsor a Child", href: "#" },
+      { name: "Volunteer", href: "mailto:dzidzofoundation@gmail.com" },
+      { name: "Partner With Us", href: "mailto:dzidzofoundation@gmail.com" },
     ],
   };
 
   const socials = [
     { icon: Facebook, href: "https://www.facebook.com/p/Dzidzo-Foundation-100067639960215/", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
+    // { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Instagram, href: "https://www.instagram.com/dzidzofoundation/", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    // { icon: Linkedin, href: "#", label: "LinkedIn" },
   ];
 
   return (
@@ -35,14 +35,15 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                <Heart className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <span className="font-display text-xl font-semibold">Dzidzo Foundation</span>
+            <a href="/" className="inline-flex items-center mb-6">
+              <img
+                src={logo}
+                alt="Dzidzo Foundation"
+                className="h-24 w-auto"
+              />
             </a>
             <p className="font-body text-secondary-foreground/80 leading-relaxed mb-6 max-w-sm">
-              Empowering African children through education. Together, we're building 
+              Empowering children through education. Together, we're building 
               Dzidzo foundation, one child at a time.
             </p>
             <div className="space-y-3">
@@ -107,6 +108,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
+                    target="_blank" rel="noopener noreferrer"
                     className="font-body text-sm text-secondary-foreground/70 hover:text-primary transition-colors duration-200"
                   >
                     {link.name}
@@ -130,6 +132,7 @@ const Footer = () => {
                 key={social.label}
                 href={social.href}
                 aria-label={social.label}
+                target="_blank" rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-secondary-foreground/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
               >
                 <social.icon className="w-5 h-5" />

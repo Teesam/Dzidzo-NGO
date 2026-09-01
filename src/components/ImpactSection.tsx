@@ -13,12 +13,7 @@ const stats = [
     label: "Schools Built",
     description: "Modern learning facilities across 15 countries",
   },
-  {
-    icon: TrendingUp,
-    number: "92%",
-    label: "Graduation Rate",
-    description: "Of our students complete their primary education",
-  },
+
   {
     icon: Globe,
     number: "15",

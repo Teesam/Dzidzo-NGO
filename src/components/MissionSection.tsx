@@ -40,9 +40,9 @@ const MissionSection = () => {
             </div>
             {/* Floating Card */}
             <div className="absolute -bottom-6 -right-6 lg:-right-10 bg-card rounded-xl p-6 shadow-card max-w-[280px]">
-              <p className="font-display text-2xl font-bold text-primary mb-1">5+ Years</p>
+              <p className="font-display text-2xl font-bold text-primary mb-1">10+ Years</p>
               <p className="font-body text-sm text-muted-foreground">
-                of dedicated service to children's education
+                of dedicated service to children's education and community empowerment
               </p>
             </div>
             {/* Decorative Elements */}

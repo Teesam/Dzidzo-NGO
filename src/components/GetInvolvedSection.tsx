@@ -10,15 +10,16 @@ const ways = [
     cta: "Give Now",
     variant: "default" as const,
     featured: true,
+    link: "https://www.paypal.com/donate/?hosted_button_id=HFKDSE5JMR28U",
   },
-  {
-    icon: Gift,
-    title: "Sponsor a Child",
-    description: "Create a lasting bond by sponsoring a child's entire educational journey from start to finish.",
-    cta: "Sponsor Today",
-    variant: "accent" as const,
-    featured: false,
-  },
+  // {
+  //   icon: Gift,
+  //   title: "Sponsor a Child",
+  //   description: "Create a lasting bond by sponsoring a child's entire educational journey from start to finish.",
+  //   cta: "Sponsor Today",
+  //   variant: "accent" as const,
+  //   featured: false,
+  // },
   {
     icon: Users,
     title: "Volunteer",
@@ -26,6 +27,7 @@ const ways = [
     cta: "Join Us",
     variant: "outline" as const,
     featured: false,
+    link: "mailto:dzidzofoundation@gmail.com",
   },
   {
     icon: Handshake,
@@ -34,6 +36,7 @@ const ways = [
     cta: "Partner",
     variant: "outline" as const,
     featured: false,
+    link: "mailto:dzidzofoundation@gmail.com",
   },
 ];
 
@@ -56,11 +59,11 @@ const GetInvolvedSection = () => {
         </div>
 
         {/* Ways Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="flex justify-between align-items mb-16">
           {ways.map((way) => (
             <div
               key={way.title}
-              className={`relative rounded-2xl p-8 text-center transition-all duration-300 hover:-translate-y-2 ${
+              className={`relative w-[30%] rounded-2xl p-8 text-center transition-all duration-300 hover:-translate-y-2 ${
                 way.featured
                   ? "bg-primary text-primary-foreground shadow-elevated"
                   : "bg-card text-foreground shadow-card hover:shadow-elevated"
@@ -90,13 +93,16 @@ const GetInvolvedSection = () => {
               </p>
 
               {/* CTA */}
-              <Button
-                variant={way.featured ? "hero-outline" : way.variant}
-                size="lg"
-                className="w-full"
-              >
+              
+              <a href={way.link} target="_blank" rel="noopener noreferrer" 
+                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary/90  transition-colors duration-200 ${
+                  way.featured
+                  ? "text-[#fff] hover:text-primary border border-[#fff] hover:border-primary hover:bg-[#fff]" : 
+                  "text-primary hover:text-[#fff] border border-primary hover:border-[#fff]"
+                }
+                `}>
                 {way.cta}
-              </Button>
+              </a>
 
               {/* Featured Badge */}
               {way.featured && (
@@ -127,9 +133,9 @@ const GetInvolvedSection = () => {
                   who need it most.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button variant="hero" size="xl">
+                  <a href="https://www.paypal.com/donate/?hosted_button_id=HFKDSE5JMR28U" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors duration-200">
                     Donate Now
-                  </Button>
+                  </a>
                   <Button variant="hero-outline" size="xl">
                     Learn More
                   </Button>
